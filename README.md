@@ -1,4 +1,4 @@
-<img width="1470" height="828" alt="image" src="https://github.com/user-attachments/assets/e8f0eb1f-bd85-4027-914e-51fa20c46920" /># Data Warehouse SQL Server
+# Data Warehouse SQL Server
 
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-Data%20Warehouse-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 ![ETL](https://img.shields.io/badge/ETL-Bronze%20%7C%20Silver%20%7C%20Gold-2F6FED?style=for-the-badge)
@@ -188,10 +188,13 @@ The Gold layer exposes business-ready views for reporting and analytics. It inte
 **Result**
 
 <img width="1463" height="826" alt="Screenshot 2026-05-27 152548" src="https://github.com/user-attachments/assets/488b7aec-a2c0-4e94-a2eb-9ac42907e107" />
+`gold.dim_customers`
 
 <img width="1472" height="822" alt="image" src="https://github.com/user-attachments/assets/94ca86dd-b41d-4740-8493-8faacebdfcb3" />
+ `gold.dim_products`
 
 <img width="1471" height="828" alt="image" src="https://github.com/user-attachments/assets/08ebe47b-ac0c-4088-aa8d-514c7b18ab30" />
+`gold.fact_sales`
 
 ## Data Quality Checks
 
