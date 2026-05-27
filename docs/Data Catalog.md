@@ -82,10 +82,4 @@ The Gold Layer is the business-ready data representation used for analytics and 
 | `gold.fact_sales.customer_key` -> `gold.dim_customers.customer_key` | Many-to-one | Connects each sales line to the customer who placed the order. |
 | `gold.fact_sales.product_key` -> `gold.dim_products.product_key` | Many-to-one | Connects each sales line to the current product dimension record. |
 
-## Quality Expectations
 
-| Object | Check | Expected Result |
-| --- | --- | --- |
-| `gold.dim_customers` | Duplicate `customer_key` values | No duplicates |
-| `gold.dim_products` | Duplicate `product_key` values | No duplicates |
-| `gold.fact_sales` | Sales records without matching customer or product dimension records | No orphaned fact rows |
