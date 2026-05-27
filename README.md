@@ -1,4 +1,4 @@
-# Data Warehouse SQL Server
+<img width="1470" height="828" alt="image" src="https://github.com/user-attachments/assets/e8f0eb1f-bd85-4027-914e-51fa20c46920" /># Data Warehouse SQL Server
 
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-Data%20Warehouse-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 ![ETL](https://img.shields.io/badge/ETL-Bronze%20%7C%20Silver%20%7C%20Gold-2F6FED?style=for-the-badge)
@@ -10,9 +10,11 @@ This project demonstrates the design and implementation of a modern SQL Server d
 
 The warehouse consolidates CRM and ERP source data, applies cleansing and standardization rules, integrates related business entities, and exposes a business-ready Star Schema for reporting, analytics, and decision-making.
 
-## Business Objective
+## Objective
 
-The goal is to build a reliable analytical data model that enables business users and analysts to answer questions about:
+Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+
+The final analytical model helps business users and analysts answer questions about:
 
 - Customer behavior and demographics
 - Product performance and product categories
@@ -23,25 +25,19 @@ The goal is to build a reliable analytical data model that enables business user
 
 The solution follows a layered warehouse architecture in SQL Server. Raw CSV data is loaded into the Bronze layer, transformed and standardized in the Silver layer, then modeled into analytical views in the Gold layer.
 
-<p align="center">
-  <img src="docs/images/data_architecture.png" alt="High Level Data Warehouse Architecture" width="950">
-</p>
+<img width="1172" height="629" alt="Data Architecture" src="https://github.com/user-attachments/assets/def86645-f99e-44f6-9928-9e3e37ff48b8" />
 
 ## Data Flow
 
 The data flow begins with source files from CRM and ERP systems. Each source table is loaded into Bronze, cleaned into Silver, and integrated into Gold dimensions and facts.
 
-<p align="center">
-  <img src="docs/images/data_flow_diagram.png" alt="Data Flow Diagram" width="950">
-</p>
+<img width="961" height="553" alt="Data Flow Diagram" src="https://github.com/user-attachments/assets/7a3b86af-9771-4035-af90-f82562770f97" />
 
 ## Data Integration Model
 
 The integration model shows how CRM and ERP entities relate to one another before they are combined into the final analytical model.
 
-<p align="center">
-  <img src="docs/images/data_integration.png" alt="Data Integration Model" width="850">
-</p>
+<img width="698" height="434" alt="Data Integration" src="https://github.com/user-attachments/assets/8e5e792d-6c4b-4d78-90ed-33f9d320abdb" />
 
 ## Data Mart Model
 
@@ -51,9 +47,7 @@ The Gold layer is modeled as a Star Schema with two dimensions and one fact view
 - `gold.dim_products`
 - `gold.fact_sales`
 
-<p align="center">
-  <img src="docs/images/data_model.png" alt="Gold Layer Star Schema Data Model" width="850">
-</p>
+<img width="761" height="424" alt="Data Model" src="https://github.com/user-attachments/assets/6be5b4d3-8dd0-49be-b5b1-7188cd7d2fb9" />
 
 ## Repository Structure
 
@@ -61,12 +55,10 @@ The Gold layer is modeled as a Star Schema with two dimensions and one fact view
 Data_Warehouse_SQL/
 |-- docs/
 |   |-- data_catalog.md
-|   |-- images/
-|   |   |-- data_architecture.png
-|   |   |-- data_flow_diagram.png
-|   |   |-- data_integration.png
-|   |   |-- data_model.png
-|   |   `-- results/
+|   |-- data_architecture.png
+|   |-- data_flow_diagram.png
+|   |-- data_integration.png
+|   |-- data_model.png
 |-- scripts/
 |   |-- bronze/
 |   |   |-- ddl_bronze.sql
@@ -117,15 +109,9 @@ The Bronze layer stores source data as-is from CRM and ERP files. This layer is 
 - `scripts/bronze/ddl_bronze.sql`
 - `scripts/bronze/proc_load_bronze.sql`
 
-**Result evidence**
+**Result**
 
-Add a screenshot of the Bronze load result, row counts, or sample table output here.
-
-<!--
-<p align="center">
-  <img src="docs/images/results/bronze_result.png" alt="Bronze Layer Result" width="900">
-</p>
--->
+<img width="1388" height="826" alt="image" src="https://github.com/user-attachments/assets/8dd32f23-aa31-42b7-bf08-ec522dbb3dc9" />
 
 ### 2. Silver Layer: Cleansing and Standardization
 
@@ -165,15 +151,9 @@ The Silver layer transforms raw Bronze data into clean, standardized, and analys
 - `scripts/silver/proc_doc_silver.sql`
 - `tests/quality_checks_silver.sql`
 
-**Result evidence**
+**Result**
 
-Add a screenshot of the Silver transformation result, quality checks, or cleaned sample output here.
-
-<!--
-<p align="center">
-  <img src="docs/images/results/silver_result.png" alt="Silver Layer Result" width="900">
-</p>
--->
+<img width="1470" height="828" alt="Screenshot 2026-05-27 152253" src="https://github.com/user-attachments/assets/4106fb28-d684-4a2e-ae87-f2b666900680" />
 
 ### 3. Gold Layer: Business-Ready Star Schema
 
@@ -205,15 +185,13 @@ The Gold layer exposes business-ready views for reporting and analytics. It inte
 - `scripts/gold/ddl_gold.sql`
 - `tests/quality_checks_gold.sql`
 
-**Result evidence**
+**Result**
 
-Add a screenshot of the Gold views, Star Schema query result, or reporting-ready output here.
+<img width="1463" height="826" alt="Screenshot 2026-05-27 152548" src="https://github.com/user-attachments/assets/488b7aec-a2c0-4e94-a2eb-9ac42907e107" />
 
-<!--
-<p align="center">
-  <img src="docs/images/results/gold_result.png" alt="Gold Layer Result" width="900">
-</p>
--->
+<img width="1472" height="822" alt="image" src="https://github.com/user-attachments/assets/94ca86dd-b41d-4740-8493-8faacebdfcb3" />
+
+<img width="1471" height="828" alt="image" src="https://github.com/user-attachments/assets/08ebe47b-ac0c-4088-aa8d-514c7b18ab30" />
 
 ## Data Quality Checks
 
