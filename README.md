@@ -231,7 +231,7 @@ The project includes quality checks to validate the warehouse before analytical 
 
 ## Documentation
 
-- [Data Catalog](docs/Data_Catalog.md): Business and technical descriptions for Gold Layer objects.
+- [Data Catalog](docs/Data%20Catalog.md): Business and technical descriptions for Gold Layer objects.
 - [Architecture Diagram](docs/data_architecture.png): High-level warehouse architecture.
 - [Data Flow Diagram](docs/data_flow_diagram.png): End-to-end data movement across layers.
 - [Integration Model](docs/data_integration.png): CRM and ERP relationship mapping.
