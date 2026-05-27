@@ -108,7 +108,7 @@ The Bronze layer stores source data as-is from CRM and ERP files. This layer is 
 - `scripts/bronze/ddl_bronze.sql`
 - `scripts/bronze/proc_load_bronze.sql`
 
-**Result**
+**Results**
 
 <img width="1388" height="826" alt="image" src="https://github.com/user-attachments/assets/8dd32f23-aa31-42b7-bf08-ec522dbb3dc9" />
 
@@ -150,7 +150,7 @@ The Silver layer transforms raw Bronze data into clean, standardized, and analys
 - `scripts/silver/proc_doc_silver.sql`
 - `tests/quality_checks_silver.sql`
 
-**Result**
+**Results**
 
 <img width="1470" height="828" alt="Screenshot 2026-05-27 152253" src="https://github.com/user-attachments/assets/4106fb28-d684-4a2e-ae87-f2b666900680" />
 
@@ -184,7 +184,7 @@ The Gold layer exposes business-ready views for reporting and analytics. It inte
 - `scripts/gold/ddl_gold.sql`
 - `tests/quality_checks_gold.sql`
 
-**Result**
+**Results**
 
 <p align="center">
   <img width="1463" height="826" alt="gold.dim_customers result" src="https://github.com/user-attachments/assets/488b7aec-a2c0-4e94-a2eb-9ac42907e107">
