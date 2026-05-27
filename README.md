@@ -62,17 +62,16 @@ Data_Warehouse_SQL/
 |-- scripts/
 |   |-- bronze/
 |   |   |-- ddl_bronze.sql
-|   |   `-- proc_load_bronze.sql
+|   |   |-- proc_load_bronze.sql
 |   |-- silver/
 |   |   |-- ddl_silver.sql
-|   |   `-- proc_doc_silver.sql
+|   |   |-- proc_doc_silver.sql
 |   |-- gold/
-|   |   `-- ddl_gold.sql
-|   `-- init_database.sql
+|   |   |-- ddl_gold.sql
 |-- tests/
 |   |-- quality_checks_silver.sql
-|   `-- quality_checks_gold.sql
-`-- README.md
+|   |-- quality_checks_gold.sql
+|-- README.md
 ```
 
 ## Implementation Workflow
