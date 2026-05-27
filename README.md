@@ -186,8 +186,11 @@ The Gold layer exposes business-ready views for reporting and analytics. It inte
 
 **Result**
 
-<img width="1463" height="826" alt="Screenshot 2026-05-27 152548" src="https://github.com/user-attachments/assets/488b7aec-a2c0-4e94-a2eb-9ac42907e107" />
-<strong>gold.dim_customers</strong>
+<p align="center">
+  <img width="1463" height="826" alt="gold.dim_customers result" src="https://github.com/user-attachments/assets/488b7aec-a2c0-4e94-a2eb-9ac42907e107">
+  <br>
+  <strong>gold.dim_customers</strong>
+</p>
 
 <img width="1472" height="822" alt="image" src="https://github.com/user-attachments/assets/94ca86dd-b41d-4740-8493-8faacebdfcb3" />
  `gold.dim_products`
