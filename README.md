@@ -248,6 +248,6 @@ The project includes quality checks to validate the warehouse before analytical 
 - ETL
 - Star Schema Modeling
 
-## Project Outcome
+## Outcome
 
 The final warehouse provides a clean and integrated analytical model that can support BI dashboards, ad-hoc SQL analysis, reporting, and future machine learning use cases.
