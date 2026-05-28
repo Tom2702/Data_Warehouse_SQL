@@ -68,6 +68,8 @@ Data_Warehouse_SQL/
 |   |   |-- proc_doc_silver.sql
 |   |-- gold/
 |   |   |-- ddl_gold.sql
+|   |-- analytics.md
+|   |-- init_database.sql
 |-- tests/
 |   |-- quality_checks_silver.sql
 |   |-- quality_checks_gold.sql
@@ -214,6 +216,31 @@ The Gold layer exposes business-ready views for reporting and analytics. It inte
   <strong>gold.fact_sales</strong>
 </p>
 
+## Analytics
+
+The project includes an analytics layer built on top of the Gold views. These queries answer business questions about sales trends, product performance, category contribution, customer segmentation, and BI-ready reporting views.
+
+Full analytics documentation: [Analytics and Key Insights](docs/analytics.md)  
+SQL script: `scripts/analytics/analytics_queries.sql`
+
+| Analysis Area | Business Question | Main Output |
+| --- | --- | --- |
+| Sales Trend | How do sales, customer count, and quantity change over time? | Monthly sales performance |
+| Monthly Sales Movement | How do cumulative sales and average price move over time? | Running sales trend and moving average price |
+| Product Performance | Which products perform above or below average year over year? | Product-level yearly performance |
+| Category Contribution | Which categories contribute most to revenue? | Category sales share |
+| Product Segmentation | How are products distributed by cost range? | Product cost segments |
+| Customer Segmentation | Which customers are VIP, Regular, or New? | Customer behavior segments |
+| Customer Report | What customer KPIs are needed for BI? | `gold.report_customers` |
+| Product Report | What product KPIs are needed for BI? | `gold.report_products` |
+
+**Key Insights**
+
+- Bikes contribute 96.46% of total sales, making them the dominant revenue driver.
+- New customers are the largest customer segment with 14,631 customers.
+- VIP customers represent a smaller but valuable customer group with longer history and higher spending.
+- Product sales are concentrated in the Bikes category, especially Mountain Bikes and Road Bikes.
+- The analytics views provide reusable datasets for dashboards, ad-hoc analysis, and business reporting.
 
 ## Data Quality Checks
 
