@@ -155,7 +155,7 @@ The Silver layer transforms raw Bronze data into clean, standardized, and analys
 
 <img width="1470" height="828" alt="Screenshot 2026-05-27 152253" src="https://github.com/user-attachments/assets/4106fb28-d684-4a2e-ae87-f2b666900680" />
 
-alt="Silver Layer Load Result"
+<strong>Silver Layer Load Result</strong>
 ### 3. Gold Layer: Business-Ready Star Schema
 
 The Gold layer exposes business-ready views for reporting and analytics. It integrates cleaned CRM and ERP data into dimensions and a fact view.
