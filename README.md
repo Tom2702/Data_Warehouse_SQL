@@ -112,7 +112,7 @@ The Bronze layer stores source data as-is from CRM and ERP files. This layer is 
 <p align="center">
 <img width="1388" height="826" alt="image" src="https://github.com/user-attachments/assets/8dd32f23-aa31-42b7-bf08-ec522dbb3dc9" />
   <br>
-<strong>Bronze Layer Load Result</strong>
+<strong>Bronze Layer Load </strong>
   </p>
   
 ### 2. Silver Layer: Cleansing and Standardization
@@ -157,7 +157,7 @@ The Silver layer transforms raw Bronze data into clean, standardized, and analys
 <p align="center">
 <img width="1470" height="828" alt="Screenshot 2026-05-27 152253" src="https://github.com/user-attachments/assets/4106fb28-d684-4a2e-ae87-f2b666900680" />
   <br>
-<strong>Silver Layer Load Result</strong>
+<strong>Silver Layer Load </strong>
   </p>
   
 ### 3. Gold Layer: Business-Ready Star Schema
