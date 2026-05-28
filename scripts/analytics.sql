@@ -245,7 +245,7 @@ product_aggregation AS (
 		subcategory,
 		cost
 )
--- Final Query: Combines all customer results into one output
+-- Final Query: Combines all product results into one output
 SELECT 
 	product_key,
 	product_name,
