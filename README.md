@@ -220,7 +220,7 @@ The Gold layer exposes business-ready views for reporting and analytics. It inte
 
 The project includes an analytics layer built on top of the Gold views. These queries answer business questions about sales trends, product performance, category contribution, customer segmentation, and BI-ready reporting views.
 
-SQL script: `main/scripts/analytics.sql`(main/scripts/analytics.sql) 
+[SQL script](main/scripts/analytics.sql) 
 
 | Analysis Area | Business Question | Main Output |
 | --- | --- | --- |
