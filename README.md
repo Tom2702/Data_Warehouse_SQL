@@ -248,7 +248,7 @@ SQL script: `scripts/analytics/analytics_queries.sql`
 **Business question:** How do sales, customer count, and quantity sold change by month?
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_01.png" alt="Sales performance over time result" width="520">
+  <img width="733" height="1199" alt="image" src="https://github.com/user-attachments/assets/131b3c15-c413-40ac-bd17-e52f9db74294" />
 </p>
 
 **Key insight:** Sales, customer count, and quantity trend upward over time. The visible results show a strong jump in 2013, where monthly sales move above 1M in several months.
@@ -261,7 +261,7 @@ SQL script: `scripts/analytics/analytics_queries.sql`
 **Business question:** What is the monthly sales trend, cumulative sales growth, and average price movement over time?
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_02.png" alt="Monthly sales trend result" width="520">
+  <img width="734" height="1238" alt="image" src="https://github.com/user-attachments/assets/5a1b9d70-c819-430d-88a2-5899374417c1" />
 </p>
 
 **Key insight:** Sales increase while average selling price trends downward in the visible results, suggesting later growth is driven more by volume and customer expansion than by higher unit prices.
@@ -274,7 +274,7 @@ SQL script: `scripts/analytics/analytics_queries.sql`
 **Business question:** Which products perform above or below their average sales, and how do they change year over year?
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_03.png" alt="Yearly product performance result" width="760">
+  <img width="975" height="449" alt="image" src="https://github.com/user-attachments/assets/6f749dad-814a-4766-a3fb-8e87a06ffd18" />
 </p>
 
 **Key insight:** The yearly comparison highlights products that outperform their historical average and products with year-over-year declines, helping identify products to prioritize or investigate.
@@ -287,7 +287,7 @@ SQL script: `scripts/analytics/analytics_queries.sql`
 **Business question:** Which product categories contribute the most to total revenue?
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_04.png" alt="Category contribution result" width="460">
+  <img width="647" height="181" alt="image" src="https://github.com/user-attachments/assets/e29eff55-743d-41d3-b9a2-260d9b7c1ebf" />
 </p>
 
 **Key insight:** Bikes generate 28,316,272 in sales, representing 96.46% of total revenue. Accessories and Clothing contribute only 2.39% and 1.16%.
@@ -300,7 +300,7 @@ SQL script: `scripts/analytics/analytics_queries.sql`
 **Business question:** How many products fall into each cost range?
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_05.png" alt="Product cost segmentation result" width="280">
+  <img width="336" height="166" alt="image" src="https://github.com/user-attachments/assets/2951ff59-1ee2-4de8-9a24-b7f466599173" />
 </p>
 
 **Key insight:** The catalog has 140 products above 1000 in cost, 110 products below 100, and 45 products between 500 and 1000.
@@ -313,7 +313,7 @@ SQL script: `scripts/analytics/analytics_queries.sql`
 **Business question:** How many customers are VIP, Regular, or New based on lifespan and spending?
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_06.png" alt="Customer segmentation result" width="320">
+  <img width="411" height="181" alt="image" src="https://github.com/user-attachments/assets/545290e3-59d8-4a2a-9bca-f6fbc955e08f" />
 </p>
 
 **Key insight:** New customers are the largest segment with 14,631 customers. Regular customers total 2,198 and VIP customers total 1,655.
@@ -326,7 +326,7 @@ SQL script: `scripts/analytics/analytics_queries.sql`
 **Business question:** What customer-level KPIs are needed for BI and customer analytics?
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_07.png" alt="Customer report result" width="950">
+  <img width="975" height="257" alt="image" src="https://github.com/user-attachments/assets/e6ff78d6-5461-4858-9f77-73150bf5ca28" />
 </p>
 
 **Key insight:** The customer report produces 18,482 customer-level rows and supports segmentation analysis by age group, customer value, recency, average order value, and monthly spending behavior.
@@ -339,7 +339,7 @@ SQL script: `scripts/analytics/analytics_queries.sql`
 **Business question:** What product-level KPIs are needed for BI and product performance analysis?
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_08.png" alt="Product report result" width="950">
+  <img width="975" height="240" alt="image" src="https://github.com/user-attachments/assets/96ad7a5a-7ec8-4f0a-9bd2-8603f808c1ba" />
 </p>
 
 **Key insight:** The product report produces 130 product-level rows. High-performing products are mainly in the Bikes category, especially Mountain Bikes and Road Bikes.
