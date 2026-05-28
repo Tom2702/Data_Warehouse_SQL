@@ -242,6 +242,110 @@ SQL script: `scripts/analytics/analytics_queries.sql`
 - Product sales are concentrated in the Bikes category, especially Mountain Bikes and Road Bikes.
 - The analytics views provide reusable datasets for dashboards, ad-hoc analysis, and business reporting.
 
+<details>
+<summary><strong>1. Sales Performance Over Time</strong></summary>
+
+**Business question:** How do sales, customer count, and quantity sold change by month?
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_01.png" alt="Sales performance over time result" width="520">
+</p>
+
+**Key insight:** Sales, customer count, and quantity trend upward over time. The visible results show a strong jump in 2013, where monthly sales move above 1M in several months.
+
+</details>
+
+<details>
+<summary><strong>2. Monthly Sales Trend, Running Total, and Moving Average Price</strong></summary>
+
+**Business question:** What is the monthly sales trend, cumulative sales growth, and average price movement over time?
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_02.png" alt="Monthly sales trend result" width="520">
+</p>
+
+**Key insight:** Sales increase while average selling price trends downward in the visible results, suggesting later growth is driven more by volume and customer expansion than by higher unit prices.
+
+</details>
+
+<details>
+<summary><strong>3. Yearly Product Performance</strong></summary>
+
+**Business question:** Which products perform above or below their average sales, and how do they change year over year?
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_03.png" alt="Yearly product performance result" width="760">
+</p>
+
+**Key insight:** The yearly comparison highlights products that outperform their historical average and products with year-over-year declines, helping identify products to prioritize or investigate.
+
+</details>
+
+<details>
+<summary><strong>4. Category Contribution to Overall Sales</strong></summary>
+
+**Business question:** Which product categories contribute the most to total revenue?
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_04.png" alt="Category contribution result" width="460">
+</p>
+
+**Key insight:** Bikes generate 28,316,272 in sales, representing 96.46% of total revenue. Accessories and Clothing contribute only 2.39% and 1.16%.
+
+</details>
+
+<details>
+<summary><strong>5. Product Segmentation by Cost</strong></summary>
+
+**Business question:** How many products fall into each cost range?
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_05.png" alt="Product cost segmentation result" width="280">
+</p>
+
+**Key insight:** The catalog has 140 products above 1000 in cost, 110 products below 100, and 45 products between 500 and 1000.
+
+</details>
+
+<details>
+<summary><strong>6. Customer Segmentation by Spending Behavior</strong></summary>
+
+**Business question:** How many customers are VIP, Regular, or New based on lifespan and spending?
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_06.png" alt="Customer segmentation result" width="320">
+</p>
+
+**Key insight:** New customers are the largest segment with 14,631 customers. Regular customers total 2,198 and VIP customers total 1,655.
+
+</details>
+
+<details>
+<summary><strong>7. Customer Report View</strong></summary>
+
+**Business question:** What customer-level KPIs are needed for BI and customer analytics?
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_07.png" alt="Customer report result" width="950">
+</p>
+
+**Key insight:** The customer report produces 18,482 customer-level rows and supports segmentation analysis by age group, customer value, recency, average order value, and monthly spending behavior.
+
+</details>
+
+<details>
+<summary><strong>8. Product Report View</strong></summary>
+
+**Business question:** What product-level KPIs are needed for BI and product performance analysis?
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_08.png" alt="Product report result" width="950">
+</p>
+
+**Key insight:** The product report produces 130 product-level rows. High-performing products are mainly in the Bikes category, especially Mountain Bikes and Road Bikes.
+
+</details>
+
 ## Data Quality Checks
 
 The project includes quality checks to validate the warehouse before analytical use.
