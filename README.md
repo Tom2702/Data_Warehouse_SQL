@@ -241,7 +241,7 @@ The project includes an analytics layer built on top of the Gold views.
 | 07 | Customer Report View | What customer-level KPIs are needed for BI and customer analytics? | `gold.report_customers` |
 | 08 | Product Report View | What product-level KPIs are needed for BI and product performance analysis? | `gold.report_products` |
 
-**Key Insights**
+**Key Findings**
 
 - Bikes contribute 96.46% of total sales, making them the dominant revenue driver.
 - New customers are the largest customer segment with 14,631 customers.
