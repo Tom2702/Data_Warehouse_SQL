@@ -262,7 +262,7 @@ The project includes an analytics layer built on top of the Gold views.
 **SQL query:**
 
 <p align="center">
-  <img width="844" height="358" alt="image" src="https://github.com/user-attachments/assets/dedf036e-3d1c-4499-942d-42b6f735b091" />
+  <img width="571" height="343" alt="image" src="https://github.com/user-attachments/assets/939b4d09-d4e5-42d5-ae59-a3aa53ba602a" />
 </p>
 
 **Result:**
@@ -281,7 +281,7 @@ The project includes an analytics layer built on top of the Gold views.
 **SQL query:**
 
 <p align="center">
-  <img width="1471" height="515" alt="image" src="https://github.com/user-attachments/assets/70ac4fed-1b8c-44c0-b82a-9215e91830d2" />
+  <img width="946" height="475" alt="image" src="https://github.com/user-attachments/assets/342a2e84-1d60-4fd5-a22a-abe9f043ca0e" />
 </p>
 
 **Result:**
@@ -289,8 +289,6 @@ The project includes an analytics layer built on top of the Gold views.
 <p align="center">
  <img width="458" height="349" alt="image" src="https://github.com/user-attachments/assets/e539639b-f6d2-4230-89f7-0fc3ad66f675" />
 </p>
-
-**Key insight:** Sales increase while average selling price trends downward in the visible results, suggesting later growth is driven more by volume and customer expansion than by higher unit prices.
 
 </details>
 
@@ -302,16 +300,14 @@ The project includes an analytics layer built on top of the Gold views.
 **SQL query:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_query_03.png" alt="Yearly product performance SQL query" width="950">
+  <img width="1227" height="963" alt="image" src="https://github.com/user-attachments/assets/bf988d39-b444-4ae9-8875-1cf4cdaf111a" />
 </p>
 
-**Result screenshot:**
+**Result:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_03.png" alt="Yearly product performance result" width="760">
+  <img width="755" height="349" alt="image" src="https://github.com/user-attachments/assets/7d435775-cecc-4c2f-960e-fe1aa8c0153a" />
 </p>
-
-**Key insight:** The yearly comparison highlights products that outperform their historical average and products with year-over-year declines, helping identify products to prioritize or investigate.
 
 </details>
 
@@ -323,16 +319,14 @@ The project includes an analytics layer built on top of the Gold views.
 **SQL query:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_query_04.png" alt="Category contribution SQL query" width="900">
+  <img width="1093" height="545" alt="image" src="https://github.com/user-attachments/assets/26815e5b-6907-4adb-8e96-3fa554bc28f9" />
 </p>
 
-**Result screenshot:**
+**Result:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_04.png" alt="Category contribution result" width="460">
+  <img width="415" height="110" alt="image" src="https://github.com/user-attachments/assets/a86bfa06-530b-4f11-a268-c2d761cf5df5" />
 </p>
-
-**Key insight:** Bikes generate 28,316,272 in sales, representing 96.46% of total revenue. Accessories and Clothing contribute only 2.39% and 1.16%.
 
 </details>
 
@@ -344,16 +338,14 @@ The project includes an analytics layer built on top of the Gold views.
 **SQL query:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_query_05.png" alt="Product cost segmentation SQL query" width="900">
+  <img width="561" height="627" alt="image" src="https://github.com/user-attachments/assets/89fcf8a6-fff0-4ab4-8844-a7b756f69c0e" />
 </p>
 
-**Result screenshot:**
+**Result:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_05.png" alt="Product cost segmentation result" width="280">
+  <img width="218" height="110" alt="image" src="https://github.com/user-attachments/assets/274d3ca6-34fd-4813-a691-93738b9781e0" />
 </p>
-
-**Key insight:** The catalog has 140 products above 1000 in cost, 110 products below 100, and 45 products between 500 and 1000.
 
 </details>
 
@@ -365,16 +357,14 @@ The project includes an analytics layer built on top of the Gold views.
 **SQL query:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_query_06.png" alt="Customer segmentation SQL query" width="900">
+ <img width="750" height="874" alt="image" src="https://github.com/user-attachments/assets/91641bcb-1e74-46f3-965f-f82745d3e65c" />
 </p>
 
-**Result screenshot:**
+**Result:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_06.png" alt="Customer segmentation result" width="320">
+  <img width="266" height="120" alt="image" src="https://github.com/user-attachments/assets/bbe04bd1-2605-483d-bb6d-5e7984bd7084" />
 </p>
-
-**Key insight:** New customers are the largest segment with 14,631 customers. Regular customers total 2,198 and VIP customers total 1,655.
 
 </details>
 
@@ -386,16 +376,15 @@ The project includes an analytics layer built on top of the Gold views.
 **SQL query:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_query_07.png" alt="Customer report view SQL query" width="950">
+  <img width="710" height="1176" alt="image" src="https://github.com/user-attachments/assets/22c292b9-b0a8-4ab4-a1e6-c461d60edb0d" />
+  <img width="705" height="891" alt="image" src="https://github.com/user-attachments/assets/3b4721fb-e4ff-43b3-9eac-28984571910f" />
 </p>
 
-**Result screenshot:**
+**Result:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_07.png" alt="Customer report result" width="950">
+  <img width="1498" height="250" alt="image" src="https://github.com/user-attachments/assets/ede3a7f6-9c7b-4dd1-9c7c-445526d01850" />
 </p>
-
-**Key insight:** The customer report produces 18,482 customer-level rows and supports segmentation analysis by age group, customer value, recency, average order value, and monthly spending behavior.
 
 </details>
 
@@ -407,16 +396,15 @@ The project includes an analytics layer built on top of the Gold views.
 **SQL query:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_query_08.png" alt="Product report view SQL query" width="950">
+  <img width="932" height="1318" alt="image" src="https://github.com/user-attachments/assets/a2d9464b-0536-46c3-ae11-da974cef26d3" />
+  <img width="678" height="837" alt="image" src="https://github.com/user-attachments/assets/d4a973f8-28e6-414f-bb89-0d8b8ff800b9" />
 </p>
 
-**Result screenshot:**
+**Result:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_08.png" alt="Product report result" width="950">
+  <img width="1591" height="248" alt="image" src="https://github.com/user-attachments/assets/a1281898-229d-419c-906d-03caf50f7add" />
 </p>
-
-**Key insight:** The product report produces 130 product-level rows. High-performing products are mainly in the Bikes category, especially Mountain Bikes and Road Bikes.
 
 </details>
 
