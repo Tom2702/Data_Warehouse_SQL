@@ -235,10 +235,7 @@ The Gold layer exposes business-ready views for reporting and analytics. It inte
 
 ## Analytics
 
-The project includes an analytics layer built on top of the Gold views. Each analysis includes the business question, result screenshot, and key insight.
-
-Full analytics documentation: [Analytics and Key Insights](docs/analytics.md)  
-SQL script: `scripts/analytics/analytics_queries.sql`
+The project includes an analytics layer built on top of the Gold views. 
 
 | No. | Analysis Area | Business Question | Main Output |
 | --- | --- | --- | --- |
