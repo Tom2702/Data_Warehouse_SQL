@@ -118,9 +118,9 @@ The Bronze layer stores source data as-is from CRM and ERP files. This layer is 
 - `scripts/bronze/ddl_bronze.sql`
 - `scripts/bronze/proc_load_bronze.sql`
 
-**Result evidence**
+**Result**
 
-Add a screenshot of the Bronze load result, row counts, or sample table output here.
+<img width="567" height="681" alt="image" src="https://github.com/user-attachments/assets/795c9f0a-6bc5-4c01-acfa-f9354de88d87" />
 
 <!--
 <p align="center">
@@ -166,9 +166,9 @@ The Silver layer transforms raw Bronze data into clean, standardized, and analys
 - `scripts/silver/proc_doc_silver.sql`
 - `tests/quality_checks_silver.sql`
 
-**Result evidence**
+**Result**
 
-Add a screenshot of the Silver transformation result, quality checks, or cleaned sample output here.
+<img width="551" height="675" alt="image" src="https://github.com/user-attachments/assets/52ca72a9-0d8a-46aa-88a2-8345f871c5ac" />
 
 <!--
 <p align="center">
