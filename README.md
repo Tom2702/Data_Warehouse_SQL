@@ -63,17 +63,12 @@ The Gold layer is modeled as a Star Schema with two dimensions and one fact view
 Data_Warehouse_SQL/
 |-- docs/
 |   |-- data_catalog.md
-|   |-- analytics.md
-|   |-- images/
-|   |   |-- data_architecture.png
-|   |   |-- data_flow_diagram.png
-|   |   |-- data_integration.png
-|   |   |-- data_model.png
-|   |   |-- analytics/
-|   |   `-- results/
+|   |-- data_architecture.png
+|   |-- data_flow_diagram.png
+|   |-- data_integration.png
+|   `-- data_model.png
 |-- scripts/
-|   |-- analytics/
-|   |   `-- analytics_queries.sql
+|   |-- analytics.sql
 |   |-- bronze/
 |   |   |-- ddl_bronze.sql
 |   |   `-- proc_load_bronze.sql
