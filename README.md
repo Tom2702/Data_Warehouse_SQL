@@ -262,7 +262,7 @@ The project includes an analytics layer built on top of the Gold views.
 **SQL query:**
 
 <p align="center">
-  <img width="841" height="316" alt="image" src="https://github.com/user-attachments/assets/a62d444e-e88f-4582-9c79-ac2f0842e3c3" />
+  <img width="844" height="358" alt="image" src="https://github.com/user-attachments/assets/dedf036e-3d1c-4499-942d-42b6f735b091" />
 </p>
 
 **Result:**
@@ -281,13 +281,13 @@ The project includes an analytics layer built on top of the Gold views.
 **SQL query:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_query_02.png" alt="Monthly sales trend SQL query" width="900">
+  <img width="1471" height="515" alt="image" src="https://github.com/user-attachments/assets/70ac4fed-1b8c-44c0-b82a-9215e91830d2" />
 </p>
 
-**Result screenshot:**
+**Result:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_02.png" alt="Monthly sales trend result" width="520">
+ <img width="458" height="349" alt="image" src="https://github.com/user-attachments/assets/e539639b-f6d2-4230-89f7-0fc3ad66f675" />
 </p>
 
 **Key insight:** Sales increase while average selling price trends downward in the visible results, suggesting later growth is driven more by volume and customer expansion than by higher unit prices.
