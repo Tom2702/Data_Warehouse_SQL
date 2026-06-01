@@ -10,7 +10,7 @@ This project demonstrates the design and implementation of a modern SQL Server d
 
 The warehouse consolidates CRM and ERP source data, applies cleansing and standardization rules, integrates related business entities, and exposes a business-ready Star Schema for reporting, analytics, and decision-making.
 
-## Project Objective
+## Objective
 
 Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
 
@@ -443,6 +443,6 @@ The project includes quality checks to validate the warehouse before analytical 
 - ETL
 - Star Schema Modeling
 
-## Project Outcome
+## Outcome
 
 The final warehouse provides a clean and integrated analytical model that can support BI dashboards, ad-hoc SQL analysis, reporting, and future machine learning use cases.
