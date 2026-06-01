@@ -271,6 +271,8 @@ The project includes an analytics layer built on top of the Gold views.
   <img width="468" height="344" alt="image" src="https://github.com/user-attachments/assets/63072565-bd1f-4b27-b7b2-98e0949cf2f7" />
 </p>
 
+**Key insight:** Sales increase while average selling price trends downward in the visible results, suggesting later growth is driven more by volume and customer expansion than by higher unit prices.
+
 <details>
  
 <details>
