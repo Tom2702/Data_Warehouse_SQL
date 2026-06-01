@@ -1,8 +1,10 @@
-# Data Warehouse | SQL Server
+# SQL Server Data Warehouse Project
 
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-Data%20Warehouse-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 ![ETL](https://img.shields.io/badge/ETL-Bronze%20%7C%20Silver%20%7C%20Gold-2F6FED?style=for-the-badge)
 ![Data Modeling](https://img.shields.io/badge/Data%20Modeling-Star%20Schema-F2C94C?style=for-the-badge)
+
+**Repository Name:** `Data_Warehouse_SQL`
 
 ## Overview
 
@@ -10,7 +12,7 @@ This project demonstrates the design and implementation of a modern SQL Server d
 
 The warehouse consolidates CRM and ERP source data, applies cleansing and standardization rules, integrates related business entities, and exposes a business-ready Star Schema for reporting, analytics, and decision-making.
 
-## Objective
+## Project Objective
 
 Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
 
@@ -25,19 +27,25 @@ The final analytical model helps business users and analysts answer questions ab
 
 The solution follows a layered warehouse architecture in SQL Server. Raw CSV data is loaded into the Bronze layer, transformed and standardized in the Silver layer, then modeled into analytical views in the Gold layer.
 
-<img width="1172" height="629" alt="Data Architecture" src="https://github.com/user-attachments/assets/def86645-f99e-44f6-9928-9e3e37ff48b8" />
+<p align="center">
+  <img src="docs/images/data_architecture.png" alt="High Level Data Warehouse Architecture" width="950">
+</p>
 
 ## Data Flow
 
 The data flow begins with source files from CRM and ERP systems. Each source table is loaded into Bronze, cleaned into Silver, and integrated into Gold dimensions and facts.
 
-<img width="961" height="553" alt="Data Flow Diagram" src="https://github.com/user-attachments/assets/7a3b86af-9771-4035-af90-f82562770f97" />
+<p align="center">
+  <img src="docs/images/data_flow_diagram.png" alt="Data Flow Diagram" width="950">
+</p>
 
 ## Data Integration Model
 
 The integration model shows how CRM and ERP entities relate to one another before they are combined into the final analytical model.
 
-<img width="698" height="434" alt="Data Integration" src="https://github.com/user-attachments/assets/8e5e792d-6c4b-4d78-90ed-33f9d320abdb" />
+<p align="center">
+  <img src="docs/images/data_integration.png" alt="Data Integration Model" width="850">
+</p>
 
 ## Data Mart Model
 
@@ -47,7 +55,9 @@ The Gold layer is modeled as a Star Schema with two dimensions and one fact view
 - `gold.dim_products`
 - `gold.fact_sales`
 
-<img width="761" height="424" alt="Data Model" src="https://github.com/user-attachments/assets/6be5b4d3-8dd0-49be-b5b1-7188cd7d2fb9" />
+<p align="center">
+  <img src="docs/images/data_model.png" alt="Gold Layer Star Schema Data Model" width="850">
+</p>
 
 ## Repository Structure
 
@@ -55,25 +65,30 @@ The Gold layer is modeled as a Star Schema with two dimensions and one fact view
 Data_Warehouse_SQL/
 |-- docs/
 |   |-- data_catalog.md
-|   |-- data_architecture.png
-|   |-- data_flow_diagram.png
-|   |-- data_integration.png
-|   |-- data_model.png
+|   |-- analytics.md
+|   |-- images/
+|   |   |-- data_architecture.png
+|   |   |-- data_flow_diagram.png
+|   |   |-- data_integration.png
+|   |   |-- data_model.png
+|   |   |-- analytics/
+|   |   `-- results/
 |-- scripts/
+|   |-- analytics/
+|   |   `-- analytics_queries.sql
 |   |-- bronze/
 |   |   |-- ddl_bronze.sql
-|   |   |-- proc_load_bronze.sql
+|   |   `-- proc_load_bronze.sql
 |   |-- silver/
 |   |   |-- ddl_silver.sql
-|   |   |-- proc_doc_silver.sql
+|   |   `-- proc_doc_silver.sql
 |   |-- gold/
-|   |   |-- ddl_gold.sql
-|   |-- analytics.md
-|   |-- init_database.sql
+|   |   `-- ddl_gold.sql
+|   `-- init_database.sql
 |-- tests/
 |   |-- quality_checks_silver.sql
-|   |-- quality_checks_gold.sql
-|-- README.md
+|   `-- quality_checks_gold.sql
+`-- README.md
 ```
 
 ## Implementation Workflow
@@ -110,13 +125,16 @@ The Bronze layer stores source data as-is from CRM and ERP files. This layer is 
 - `scripts/bronze/ddl_bronze.sql`
 - `scripts/bronze/proc_load_bronze.sql`
 
-**Results**
+**Result evidence**
+
+Add a screenshot of the Bronze load result, row counts, or sample table output here.
+
+<!--
 <p align="center">
-<img width="1388" height="826" alt="image" src="https://github.com/user-attachments/assets/8dd32f23-aa31-42b7-bf08-ec522dbb3dc9" />
-  <br>
-<strong>Bronze Layer Load </strong>
-  </p>
-  
+  <img src="docs/images/results/bronze_result.png" alt="Bronze Layer Result" width="900">
+</p>
+-->
+
 ### 2. Silver Layer: Cleansing and Standardization
 
 The Silver layer transforms raw Bronze data into clean, standardized, and analysis-ready tables. This layer resolves data quality issues and prepares entities for integration.
@@ -155,13 +173,16 @@ The Silver layer transforms raw Bronze data into clean, standardized, and analys
 - `scripts/silver/proc_doc_silver.sql`
 - `tests/quality_checks_silver.sql`
 
-**Results**
+**Result evidence**
+
+Add a screenshot of the Silver transformation result, quality checks, or cleaned sample output here.
+
+<!--
 <p align="center">
-<img width="1470" height="828" alt="Screenshot 2026-05-27 152253" src="https://github.com/user-attachments/assets/4106fb28-d684-4a2e-ae87-f2b666900680" />
-  <br>
-<strong>Silver Layer Load </strong>
-  </p>
-  
+  <img src="docs/images/results/silver_result.png" alt="Silver Layer Result" width="900">
+</p>
+-->
+
 ### 3. Gold Layer: Business-Ready Star Schema
 
 The Gold layer exposes business-ready views for reporting and analytics. It integrates cleaned CRM and ERP data into dimensions and a fact view.
@@ -192,7 +213,7 @@ The Gold layer exposes business-ready views for reporting and analytics. It inte
 - `scripts/gold/ddl_gold.sql`
 - `tests/quality_checks_gold.sql`
 
-**Results**
+**Result**
 
 <p align="center">
   <img width="1463" height="826" alt="gold.dim_customers result" src="https://github.com/user-attachments/assets/488b7aec-a2c0-4e94-a2eb-9ac42907e107">
@@ -200,15 +221,11 @@ The Gold layer exposes business-ready views for reporting and analytics. It inte
   <strong>gold.dim_customers</strong>
 </p>
 
-
-
 <p align="center">
   <img width="1472" height="822" alt="gold.dim_products result" src="https://github.com/user-attachments/assets/94ca86dd-b41d-4740-8493-8faacebdfcb3">
   <br>
   <strong>gold.dim_products</strong>
 </p>
-
-
 
 <p align="center">
   <img width="1471" height="828" alt="gold.fact_sales result" src="https://github.com/user-attachments/assets/08ebe47b-ac0c-4088-aa8d-514c7b18ab30">
@@ -218,20 +235,21 @@ The Gold layer exposes business-ready views for reporting and analytics. It inte
 
 ## Analytics
 
-The project includes an analytics layer built on top of the Gold views. These queries answer business questions about sales trends, product performance, category contribution, customer segmentation, and BI-ready reporting views.
+The project includes an analytics layer built on top of the Gold views. Each analysis includes the business question, result screenshot, and key insight.
 
-[SQL script](scripts/analytics.sql) 
+Full analytics documentation: [Analytics and Key Insights](docs/analytics.md)  
+SQL script: `scripts/analytics/analytics_queries.sql`
 
-| Analysis Area | Business Question | Main Output |
-| --- | --- | --- |
-| Sales Trend | How do sales, customer count, and quantity change over time? | Monthly sales performance |
-| Monthly Sales Movement | How do cumulative sales and average price move over time? | Running sales trend and moving average price |
-| Product Performance | Which products perform above or below average year over year? | Product-level yearly performance |
-| Category Contribution | Which categories contribute most to revenue? | Category sales share |
-| Product Segmentation | How are products distributed by cost range? | Product cost segments |
-| Customer Segmentation | Which customers are VIP, Regular, or New? | Customer behavior segments |
-| Customer Report | What customer KPIs are needed for BI? | `gold.report_customers` |
-| Product Report | What product KPIs are needed for BI? | `gold.report_products` |
+| No. | Analysis Area | Business Question | Main Output |
+| --- | --- | --- | --- |
+| 01 | Sales Performance Over Time | How do sales, customer count, and quantity sold change by month? | Monthly sales performance |
+| 02 | Monthly Sales Trend, Running Total, and Moving Average Price | What is the monthly sales trend, cumulative sales growth, and average price movement over time? | Running sales trend and moving average price |
+| 03 | Yearly Product Performance | Which products perform above or below their average sales, and how do they change year over year? | Product-level yearly performance |
+| 04 | Category Contribution to Overall Sales | Which product categories contribute the most to total revenue? | Category sales share |
+| 05 | Product Segmentation by Cost | How many products fall into each cost range? | Product cost segments |
+| 06 | Customer Segmentation by Spending Behavior | How many customers are VIP, Regular, or New based on lifespan and spending? | Customer behavior segments |
+| 07 | Customer Report View | What customer-level KPIs are needed for BI and customer analytics? | `gold.report_customers` |
+| 08 | Product Report View | What product-level KPIs are needed for BI and product performance analysis? | `gold.report_products` |
 
 **Key Insights**
 
@@ -242,12 +260,20 @@ The project includes an analytics layer built on top of the Gold views. These qu
 - The analytics views provide reusable datasets for dashboards, ad-hoc analysis, and business reporting.
 
 <details>
-<summary><strong>1. Sales Performance Over Time</strong></summary>
+<summary><strong>01. Sales Performance Over Time</strong></summary>
 
 **Business question:** How do sales, customer count, and quantity sold change by month?
 
+**SQL query:**
+
 <p align="center">
-  <img width="733" height="1199" alt="image" src="https://github.com/user-attachments/assets/131b3c15-c413-40ac-bd17-e52f9db74294" />
+  <img src="docs/images/analytics/analytics_query_01.png" alt="Sales performance over time SQL query" width="900">
+</p>
+
+**Result screenshot:**
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_01.png" alt="Sales performance over time result" width="520">
 </p>
 
 **Key insight:** Sales, customer count, and quantity trend upward over time. The visible results show a strong jump in 2013, where monthly sales move above 1M in several months.
@@ -255,12 +281,20 @@ The project includes an analytics layer built on top of the Gold views. These qu
 </details>
 
 <details>
-<summary><strong>2. Monthly Sales Trend, Running Total, and Moving Average Price</strong></summary>
+<summary><strong>02. Monthly Sales Trend, Running Total, and Moving Average Price</strong></summary>
 
 **Business question:** What is the monthly sales trend, cumulative sales growth, and average price movement over time?
 
+**SQL query:**
+
 <p align="center">
-  <img width="734" height="1238" alt="image" src="https://github.com/user-attachments/assets/5a1b9d70-c819-430d-88a2-5899374417c1" />
+  <img src="docs/images/analytics/analytics_query_02.png" alt="Monthly sales trend SQL query" width="900">
+</p>
+
+**Result screenshot:**
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_02.png" alt="Monthly sales trend result" width="520">
 </p>
 
 **Key insight:** Sales increase while average selling price trends downward in the visible results, suggesting later growth is driven more by volume and customer expansion than by higher unit prices.
@@ -268,12 +302,20 @@ The project includes an analytics layer built on top of the Gold views. These qu
 </details>
 
 <details>
-<summary><strong>3. Yearly Product Performance</strong></summary>
+<summary><strong>03. Yearly Product Performance</strong></summary>
 
 **Business question:** Which products perform above or below their average sales, and how do they change year over year?
 
+**SQL query:**
+
 <p align="center">
-  <img width="975" height="449" alt="image" src="https://github.com/user-attachments/assets/6f749dad-814a-4766-a3fb-8e87a06ffd18" />
+  <img src="docs/images/analytics/analytics_query_03.png" alt="Yearly product performance SQL query" width="950">
+</p>
+
+**Result screenshot:**
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_03.png" alt="Yearly product performance result" width="760">
 </p>
 
 **Key insight:** The yearly comparison highlights products that outperform their historical average and products with year-over-year declines, helping identify products to prioritize or investigate.
@@ -281,12 +323,20 @@ The project includes an analytics layer built on top of the Gold views. These qu
 </details>
 
 <details>
-<summary><strong>4. Category Contribution to Overall Sales</strong></summary>
+<summary><strong>04. Category Contribution to Overall Sales</strong></summary>
 
 **Business question:** Which product categories contribute the most to total revenue?
 
+**SQL query:**
+
 <p align="center">
-  <img width="647" height="181" alt="image" src="https://github.com/user-attachments/assets/e29eff55-743d-41d3-b9a2-260d9b7c1ebf" />
+  <img src="docs/images/analytics/analytics_query_04.png" alt="Category contribution SQL query" width="900">
+</p>
+
+**Result screenshot:**
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_04.png" alt="Category contribution result" width="460">
 </p>
 
 **Key insight:** Bikes generate 28,316,272 in sales, representing 96.46% of total revenue. Accessories and Clothing contribute only 2.39% and 1.16%.
@@ -294,12 +344,20 @@ The project includes an analytics layer built on top of the Gold views. These qu
 </details>
 
 <details>
-<summary><strong>5. Product Segmentation by Cost</strong></summary>
+<summary><strong>05. Product Segmentation by Cost</strong></summary>
 
 **Business question:** How many products fall into each cost range?
 
+**SQL query:**
+
 <p align="center">
-  <img width="336" height="166" alt="image" src="https://github.com/user-attachments/assets/2951ff59-1ee2-4de8-9a24-b7f466599173" />
+  <img src="docs/images/analytics/analytics_query_05.png" alt="Product cost segmentation SQL query" width="900">
+</p>
+
+**Result screenshot:**
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_05.png" alt="Product cost segmentation result" width="280">
 </p>
 
 **Key insight:** The catalog has 140 products above 1000 in cost, 110 products below 100, and 45 products between 500 and 1000.
@@ -307,12 +365,20 @@ The project includes an analytics layer built on top of the Gold views. These qu
 </details>
 
 <details>
-<summary><strong>6. Customer Segmentation by Spending Behavior</strong></summary>
+<summary><strong>06. Customer Segmentation by Spending Behavior</strong></summary>
 
 **Business question:** How many customers are VIP, Regular, or New based on lifespan and spending?
 
+**SQL query:**
+
 <p align="center">
-  <img width="411" height="181" alt="image" src="https://github.com/user-attachments/assets/545290e3-59d8-4a2a-9bca-f6fbc955e08f" />
+  <img src="docs/images/analytics/analytics_query_06.png" alt="Customer segmentation SQL query" width="900">
+</p>
+
+**Result screenshot:**
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_06.png" alt="Customer segmentation result" width="320">
 </p>
 
 **Key insight:** New customers are the largest segment with 14,631 customers. Regular customers total 2,198 and VIP customers total 1,655.
@@ -320,12 +386,20 @@ The project includes an analytics layer built on top of the Gold views. These qu
 </details>
 
 <details>
-<summary><strong>7. Customer Report View</strong></summary>
+<summary><strong>07. Customer Report View</strong></summary>
 
 **Business question:** What customer-level KPIs are needed for BI and customer analytics?
 
+**SQL query:**
+
 <p align="center">
-  <img width="975" height="257" alt="image" src="https://github.com/user-attachments/assets/e6ff78d6-5461-4858-9f77-73150bf5ca28" />
+  <img src="docs/images/analytics/analytics_query_07.png" alt="Customer report view SQL query" width="950">
+</p>
+
+**Result screenshot:**
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_07.png" alt="Customer report result" width="950">
 </p>
 
 **Key insight:** The customer report produces 18,482 customer-level rows and supports segmentation analysis by age group, customer value, recency, average order value, and monthly spending behavior.
@@ -333,12 +407,20 @@ The project includes an analytics layer built on top of the Gold views. These qu
 </details>
 
 <details>
-<summary><strong>8. Product Report View</strong></summary>
+<summary><strong>08. Product Report View</strong></summary>
 
 **Business question:** What product-level KPIs are needed for BI and product performance analysis?
 
+**SQL query:**
+
 <p align="center">
-  <img width="975" height="240" alt="image" src="https://github.com/user-attachments/assets/96ad7a5a-7ec8-4f0a-9bd2-8603f808c1ba" />
+  <img src="docs/images/analytics/analytics_query_08.png" alt="Product report view SQL query" width="950">
+</p>
+
+**Result screenshot:**
+
+<p align="center">
+  <img src="docs/images/analytics/analytics_result_08.png" alt="Product report result" width="950">
 </p>
 
 **Key insight:** The product report produces 130 product-level rows. High-performing products are mainly in the Bikes category, especially Mountain Bikes and Road Bikes.
@@ -363,15 +445,17 @@ The project includes quality checks to validate the warehouse before analytical 
 5. Run `scripts/silver/ddl_silver.sql` to create Silver tables.
 6. Run `scripts/silver/proc_doc_silver.sql` to create the Silver transformation procedure, then execute `EXEC silver.load_silver;`.
 7. Run `scripts/gold/ddl_gold.sql` to create Gold analytical views.
-8. Run the SQL files in `tests/` to validate Silver and Gold data quality.
+8. Run `scripts/analytics/analytics_queries.sql` to execute analytical queries and create reporting views.
+9. Run the SQL files in `tests/` to validate Silver and Gold data quality.
 
 ## Documentation
 
-- [Data Catalog](docs/Data%20Catalog.md): Business and technical descriptions for Gold Layer objects.
-- [Architecture Diagram](docs/Data%20Architecture.png): High-level warehouse architecture.
-- [Data Flow Diagram](docs/Data%20Flow%20Diagram.png): End-to-end data movement across layers.
-- [Integration Model](docs/Data%20Integration.png): CRM and ERP relationship mapping.
-- [Data Model](docs/Data%20Model.png): Gold Layer Star Schema.
+- [Data Catalog](docs/data_catalog.md): Business and technical descriptions for Gold Layer objects.
+- [Analytics and Key Insights](docs/analytics.md): Analytical queries, result screenshots, and business insights.
+- [Architecture Diagram](docs/images/data_architecture.png): High-level warehouse architecture.
+- [Data Flow Diagram](docs/images/data_flow_diagram.png): End-to-end data movement across layers.
+- [Integration Model](docs/images/data_integration.png): CRM and ERP relationship mapping.
+- [Data Model](docs/images/data_model.png): Gold Layer Star Schema.
 
 ## Tech Stack
 
@@ -384,6 +468,6 @@ The project includes quality checks to validate the warehouse before analytical 
 - ETL
 - Star Schema Modeling
 
-## Outcome
+## Project Outcome
 
 The final warehouse provides a clean and integrated analytical model that can support BI dashboards, ad-hoc SQL analysis, reporting, and future machine learning use cases.
