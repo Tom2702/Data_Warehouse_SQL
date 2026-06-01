@@ -272,6 +272,8 @@ The project includes an analytics layer built on top of the Gold views.
 </p>
 
 <details>
+ 
+<details>
 <summary><strong>02. Monthly Sales Trend, Running Total, and Moving Average Price</strong></summary>
 
 **Business question:** What is the monthly sales trend, cumulative sales growth, and average price movement over time?
