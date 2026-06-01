@@ -273,7 +273,7 @@ The project includes an analytics layer built on top of the Gold views.
 
 **Key insight:** Sales increase while average selling price trends downward in the visible results, suggesting later growth is driven more by volume and customer expansion than by higher unit prices.
 
-<details>
+
  
 <details>
 <summary><strong>02. Monthly Sales Trend, Running Total, and Moving Average Price</strong></summary>
