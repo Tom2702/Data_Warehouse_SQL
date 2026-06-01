@@ -262,18 +262,14 @@ The project includes an analytics layer built on top of the Gold views.
 **SQL query:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_query_01.png" alt="Sales performance over time SQL query" width="900">
+  <img width="841" height="316" alt="image" src="https://github.com/user-attachments/assets/a62d444e-e88f-4582-9c79-ac2f0842e3c3" />
 </p>
 
-**Result screenshot:**
+**Result:**
 
 <p align="center">
-  <img src="docs/images/analytics/analytics_result_01.png" alt="Sales performance over time result" width="520">
+  <img width="468" height="344" alt="image" src="https://github.com/user-attachments/assets/63072565-bd1f-4b27-b7b2-98e0949cf2f7" />
 </p>
-
-**Key insight:** Sales, customer count, and quantity trend upward over time. The visible results show a strong jump in 2013, where monthly sales move above 1M in several months.
-
-</details>
 
 <details>
 <summary><strong>02. Monthly Sales Trend, Running Total, and Moving Average Price</strong></summary>
