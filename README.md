@@ -4,8 +4,6 @@
 ![ETL](https://img.shields.io/badge/ETL-Bronze%20%7C%20Silver%20%7C%20Gold-2F6FED?style=for-the-badge)
 ![Data Modeling](https://img.shields.io/badge/Data%20Modeling-Star%20Schema-F2C94C?style=for-the-badge)
 
-**Repository Name:** `Data_Warehouse_SQL`
-
 ## Overview
 
 This project demonstrates the design and implementation of a modern SQL Server data warehouse using the Medallion Architecture: Bronze, Silver, and Gold layers.
