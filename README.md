@@ -28,7 +28,7 @@ The final analytical model helps business users and analysts answer questions ab
 The solution follows a layered warehouse architecture in SQL Server. Raw CSV data is loaded into the Bronze layer, transformed and standardized in the Silver layer, then modeled into analytical views in the Gold layer.
 
 <p align="center">
-  <img src="docs/images/data_architecture.png" alt="High Level Data Warehouse Architecture" width="950">
+ <img width="1172" height="629" alt="image" src="https://github.com/user-attachments/assets/8cdf18b5-f41f-4e9a-8243-9543c8e4d8cd" />
 </p>
 
 ## Data Flow
@@ -36,7 +36,7 @@ The solution follows a layered warehouse architecture in SQL Server. Raw CSV dat
 The data flow begins with source files from CRM and ERP systems. Each source table is loaded into Bronze, cleaned into Silver, and integrated into Gold dimensions and facts.
 
 <p align="center">
-  <img src="docs/images/data_flow_diagram.png" alt="Data Flow Diagram" width="950">
+  <img width="961" height="553" alt="image" src="https://github.com/user-attachments/assets/04ed3f17-8320-4b68-8691-41bbd5188c52" />
 </p>
 
 ## Data Integration Model
@@ -44,7 +44,7 @@ The data flow begins with source files from CRM and ERP systems. Each source tab
 The integration model shows how CRM and ERP entities relate to one another before they are combined into the final analytical model.
 
 <p align="center">
-  <img src="docs/images/data_integration.png" alt="Data Integration Model" width="850">
+  <img width="698" height="434" alt="image" src="https://github.com/user-attachments/assets/a1c22f4b-983d-4c71-a6e1-6e85a751cdc3" />
 </p>
 
 ## Data Mart Model
@@ -56,7 +56,7 @@ The Gold layer is modeled as a Star Schema with two dimensions and one fact view
 - `gold.fact_sales`
 
 <p align="center">
-  <img src="docs/images/data_model.png" alt="Gold Layer Star Schema Data Model" width="850">
+  <img width="761" height="424" alt="image" src="https://github.com/user-attachments/assets/7c0865b6-3ed9-4612-9bbd-4f9cede04d4c" />
 </p>
 
 ## Repository Structure
