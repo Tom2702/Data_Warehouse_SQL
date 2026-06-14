@@ -42,7 +42,7 @@ The data flow begins with source files from CRM and ERP systems. Each source tab
 The integration model shows how CRM and ERP entities relate to one another before they are combined into the final analytical model.
 
 <p align="center">
-  <img width="698" height="434" alt="image" src="https://github.com/user-attachments/assets/a1c22f4b-983d-4c71-a6e1-6e85a751cdc3" />
+  <img width="698" height="433" alt="Integration Model" src="https://github.com/user-attachments/assets/38e126a1-c4c5-49b5-b08e-3d2d347ac2ff" />
 </p>
 
 ## Data Mart Model
